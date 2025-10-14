@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 - Sistema RRHH</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Proyecto 1: Sistema de Recursos Humanos (RRHH)</h1>
+        <p>Aplicación web empresarial desarrollada en C#, ASP.NET MVC y SQL Server</p>
+        <nav>
+            <a href="Principal.html">Volver al Inicio</a>
+        </nav>
+    </header>
+
+    <!-- Descripción general -->
+    <section class="seccion">
+        <h2>📋 Descripción del Proyecto</h2>
+        <p>
+            El <strong>Sistema de Recursos Humanos (RRHH)</strong> es una aplicación web completa desarrollada bajo una
+            arquitectura en capas que permite gestionar la información del personal de una empresa.
+            El sistema incluye módulos para <strong>
+                funcionarios, planillas, tractos de impuesto de renta, créditos fiscales,
+                cargas sociales y horas laboradas
+            </strong>.
+        </p>
+        <p>
+            Además, implementa un sistema de <strong>autenticación segura</strong> con cookies temporales y validación por
+            roles y departamentos, asegurando que solo los usuarios autorizados puedan acceder a las funciones administrativas.
+        </p>
+    </section>
+
+    <!-- Tecnologías utilizadas -->
+    <section class="seccion gris">
+        <h2>🧠 Tecnologías Utilizadas</h2>
+        <ul class="lista-habilidades">
+            <li>💻 Lenguaje principal: C# (ASP.NET MVC 6)</li>
+            <li>🗄️ Base de datos: SQL Server 2022</li>
+            <li>🎨 Interfaz: HTML, CSS, JavaScript, Bootstrap</li>
+            <li>⚙️ Arquitectura: 5 Capas (UI, Negocio, Datos, DatosSQL y Entidades)</li>
+            <li>🔒 Seguridad: Autenticación con Cookies + [Authorize]</li>
+            <li>📈 Funcionalidades: CRUD, cálculos automáticos de planilla, validaciones y sincronización entre tablas</li>
+        </ul>
+    </section>
+
+    <!--  Detalles técnicos -->
+    <section class="seccion">
+        <h2>🧾 Detalles Técnicos</h2>
+        <p>
+            El proyecto fue desarrollado durante un mes completo de trabajo continuo, aplicando buenas prácticas de desarrollo,
+            principios de seguridad y separación de capas. Se utilizó <strong>Visual Studio 2022</strong> como entorno de desarrollo
+            y <strong>SQL Server Management Studio</strong> para la administración de la base de datos.
+        </p>
+        <p>
+            Cada módulo está conectado por procedimientos almacenados, con control de errores y validaciones en la capa de negocio.
+            Además, se implementó un sistema de autenticación con cookies que expiran al cerrar sesión, garantizando seguridad y trazabilidad.
+        </p>
+    </section>
+
+    <!-- Capturas del proyecto -->
+    <section class="seccion gris">
+        <h2>🖼️ Capturas del Proyecto</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="imagenes/login_rrhh.png" alt="Pantalla de Login" class="imagen-proyecto">
+                <h3>Pantalla de Login</h3>
+                <p>Interfaz limpia con validación de usuario, contraseña y control de acceso por roles.</p>
+            </div>
+            <div class="proyecto">
+                <img src="imagenes/menu_rrhh.png" alt="Menú Principal" class="imagen-proyecto">
+                <h3>Menú Principal</h3>
+                <p>Menú con pestañas de mantenimiento: Funcionarios, Horas, Cargas, Créditos e Impuestos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  Información adicional -->
+    <section class="seccion">
+        <h2>📅 Información del Desarrollo</h2>
+        <p><strong>Duración:</strong> 1 mes</p>
+        <p>
+            <strong>Repositorio:</strong>
+            <a href="https://github.com/andreyac1397/SISTEMA_RRHH_WEB.git" target="_blank">
+                GitHub - SISTEMA_RRHH_WEB
+            </a>
+        </p>
+        <p><strong>Curso:</strong> Programación IV - Proyecto Integrador</p>
+        <p><strong>Profesor:</strong> Lic. Ronald Córdoba Vega</p>
+    </section>
+
+    <!--  Pie de página -->
+    <footer>
+        <p>© 2025 Andrey Calderón Vega | Sistema RRHH Web</p>
+    </footer>
+</body>
+</html>

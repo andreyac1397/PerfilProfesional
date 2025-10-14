@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 3 - Análisis Big Data Cartago 2022</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  Encabezado -->
+    <header>
+        <h1>Proyecto 3: Big Data — Elecciones Cartago 2022 📊</h1>
+        <p>Análisis de clustering y regresión lineal en R sobre votos y pobreza en la provincia de Cartago</p>
+        <nav>
+            <a href="Principal.html">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <!--  Descripción -->
+    <section class="seccion">
+        <h2>Sobre el Proyecto</h2>
+        <p>
+            Este proyecto analiza si el <strong>Índice de Desarrollo Social (IDS 2023)</strong> tiene relación con la
+            <strong>participación electoral y los votos por partidos religiosos</strong> en la provincia de Cartago durante las
+            elecciones de 2022.
+            Se usaron técnicas de <strong>limpieza, normalización, correlación y clustering PAM</strong> con R para identificar patrones
+            entre pobreza, abstención y preferencias electorales.
+            El proyecto fue realizado por <strong>Andrey Calderón Vega y Daniel Ñajera</strong> y se encuentra en:
+            <a href="https://github.com/andreyac1397/AnalisisClustering_R" target="_blank">
+                github.com/andreyac1397/AnalisisClustering_R
+            </a>.
+        </p>
+    </section>
+
+    <!-- Tecnologías -->
+    <section class="seccion gris">
+        <h2>🧩 Tecnologías Utilizadas</h2>
+        <ul class="lista-habilidades">
+            <li>📘 Lenguaje R</li>
+            <li>📊 ggplot2, dplyr, cluster, factoextra</li>
+            <li>📈 PAM Clustering y Regresión Lineal</li>
+            <li>📂 R Markdown / RStudio</li>
+            <li>💾 DataSets: IDS Cartago + Elecciones 2022</li>
+        </ul>
+    </section>
+
+    <!--  Capturas -->
+    <section class="seccion">
+        <h2>📸 Resultados y Correlaciones</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <img src="imagenes/participacion.png" alt="Gráfico de correlación entre participación e IDS">
+                <h3>Participación (%) vs IDS 2023</h3>
+                <p>
+                    Muestra una correlación positiva (r ≈ 0.76): los distritos con mayor IDS tienden a tener
+                    una participación electoral más alta.
+                </p>
+            </div>
+
+            <div class="proyecto">
+                <img src="imagenes/pusc.png" alt="Gráfico de correlación entre PUSC e IDS">
+                <h3>PUSC (votos) vs IDS 2023</h3>
+                <p>
+                    Se observa una correlación moderada (r ≈ 0.46): los distritos con menor IDS muestran más apoyo
+                    a partidos de tendencia religiosa o conservadora.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusiion -->
+    <section class="seccion gris">
+        <h2>📌 Conclusión</h2>
+        <p>
+            El análisis evidenció que los distritos con mayores índices de desarrollo social presentan una
+            <strong>mayor participación electoral</strong> y menor abstención.
+            En cambio, los distritos con IDS bajo tienden a mostrar <strong>mayor abstención</strong> y preferencia por
+            partidos religiosos.
+            Estos resultados pueden guiar estrategias para reducir la brecha social y promover una participación
+            más equitativa en Cartago.
+        </p>
+    </section>
+
+    <!--  Pie -->
+    <footer>
+        <p>© 2025 Andrey Calderón Vega | Proyecto Final Big Data – CUC</p>
+    </footer>
+</body>
+</html>

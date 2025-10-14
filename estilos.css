@@ -1,0 +1,251 @@
+﻿/* --------------------------- */
+/* CONFIGURACIÓN GENERAL */
+/* --------------------------- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* Encabezados y párrafos */
+h1, h2, h3 {
+    color: #003366;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+header {
+    background-color: #002855; /* Azul más oscuro */
+    color: #ffffff; /* Texto blanco visible */
+    text-align: center;
+    padding: 60px 20px 20px; /* Más espacio arriba para el nombre */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 600;
+        color: #ffffff; /* Asegura que el nombre sea blanco */
+    }
+
+    header p {
+        margin-top: 8px;
+        color: #d6e2ff; /* Azul claro para contraste */
+        font-size: 15px;
+    }
+
+
+/* --------------------------- */
+/* MENÚ DE NAVEGACIÓN */
+/* --------------------------- */
+nav {
+    margin-top: 15px;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+        nav a:hover,
+        nav a.activo {
+            color: #ffcc00;
+        }
+
+/* --------------------------- */
+/* SECCIONES */
+/* --------------------------- */
+.seccion {
+    padding: 120px 20px 60px; /* 120px para compensar el header fijo */
+    max-width: 1000px;
+    margin: auto;
+}
+
+    .seccion.gris {
+        background-color: #eef3f9;
+    }
+
+    .seccion h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #003366;
+    }
+
+/* --------------------------- */
+/* SOBRE MÍ */
+/* --------------------------- */
+.foto-perfil {
+    display: block;
+    margin: 30px auto;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------- */
+/* HABILIDADES */
+/* --------------------------- */
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .lista-habilidades li {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        font-weight: 500;
+    }
+
+/* --------------------------- */
+/* PROYECTOS */
+/* --------------------------- */
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proyecto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+    .proyecto:hover {
+        transform: translateY(-5px);
+    }
+
+    .proyecto h3 {
+        color: #003366;
+    }
+
+.boton {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+    .boton:hover {
+        background-color: #0055aa;
+    }
+
+/* --------------------------- */
+/* CONTACTO */
+/* --------------------------- */
+#contacto a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+    #contacto a:hover {
+        color: #0055aa;
+    }
+
+/* --------------------------- */
+/* PIE DE PÁGINA */
+/* --------------------------- */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* --------------------------- */
+/* RESPONSIVE DESIGN */
+/* --------------------------- */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+    }
+}
+/* =========================== */
+/* GALERÍA DE IMÁGENES (PROYECTO 1) */
+/* =========================== */
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.proyecto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 45%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .proyecto:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Imágenes dentro de las tarjetas */
+    .proyecto img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .proyecto {
+        width: 90%;
+    }
+}
