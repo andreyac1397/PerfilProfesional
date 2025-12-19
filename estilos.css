@@ -230,6 +230,13 @@ nav a.activo {
     margin-top: 30px;
 }
 
+.proyecto p {
+    text-align: left;              /* evita cortes raros */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
 .proyecto {
     background-color: white;
     padding: 20px;
