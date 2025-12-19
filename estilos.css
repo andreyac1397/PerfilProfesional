@@ -301,24 +301,9 @@ footer {
 /* --------------------------- */
 /* RESPONSIVE CELULARES */
 /* --------------------------- */
-
 @media (max-width: 600px) {
 
-    
-    /* Centrar habilidades correctamente en móvil */
-.lista-habilidades {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.lista-habilidades li {
-    text-align: center;
-    margin: 0 auto;
-}
-
-
+    /* Header */
     header {
         padding: 40px 15px 15px;
     }
@@ -329,18 +314,22 @@ footer {
 
     .hero-subtitle {
         font-size: 1.1rem;
+        margin-bottom: 10px;
     }
 
+    /* Menú */
     nav a {
         display: inline-block;
         margin: 6px 8px;
         font-size: 14px;
     }
 
+    /* Secciones */
     .seccion {
         padding: 100px 15px 50px;
     }
 
+    /* Sobre mí */
     .sobre-texto {
         font-size: 15px;
         text-align: left;
@@ -351,25 +340,49 @@ footer {
         height: 130px;
     }
 
+    /* Formación y cursos */
     .formacion-item,
     .curso-item {
         padding: 18px;
-        margin: 15px;
+        margin: 15px auto;
+    }
+
+    /* Habilidades */
+    .lista-habilidades {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .lista-habilidades li {
         font-size: 14px;
         padding: 8px 16px;
+        text-align: center;
+        margin: 0 auto;
     }
 
+    /* PROYECTOS (FIX IMPORTANTE) */
     .proyectos {
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .proyecto {
         width: 100%;
+        max-width: 92%;
+        margin: 0 auto;
+        padding: 18px;
     }
 
+    .proyecto p {
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    /* Footer */
     footer {
         font-size: 13px;
         padding: 15px;
