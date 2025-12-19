@@ -10,11 +10,19 @@
 <body>
     <!-- 🔹 Encabezado -->
     <header>
-        <h1>Andrey Calderón Vega</h1>
-        <p>Estudiante de Tecnologías de la Información y Big Data | Desarrollador TI y bases de datos</p>
+        <div class="hero-content">
+            <h1>Andrey Calderón Vega</h1>
+
+            <p class="hero-subtitle">
+                Desarrollador TI · Bases de Datos · Big Data
+            </p>
+        </div>
+
+
         <nav>
             <a href="Principal.html" class="activo">Inicio</a>
             <a href="#sobre">Sobre mí</a>
+            <a href="#formacion">Formación</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#objetivos">Objetivos</a>
             <a href="#metas">Metas</a>
@@ -26,12 +34,65 @@
     <!-- 🔹 Sobre mí -->
     <section id="sobre" class="seccion">
         <h2>Sobre mí</h2>
-        <p>
-            Soy estudiante de Tecnologías de la Información y Big Data en el Colegio Universitario de Cartago (CUC).
-            Me apasiona el inglés, la programación, las bases de datos y el desarrollo de soluciones tecnológicas.
-            Me considero una persona responsable, creativa y con una mentalidad enfocada en el aprendizaje constante.
+        <p class="sobre-texto">
+            Soy estudiante de Tecnologías de la Información y Big Data en el Colegio Universitario de Cartago (CUC),
+            con interés en el desarrollo de software, bases de datos y análisis de datos. Me apasiona crear soluciones
+            tecnológicas eficientes y funcionales, y me caracterizo por mi responsabilidad, creatividad y enfoque en
+            el aprendizaje continuo.
         </p>
+
         <img src="imagenes/perfil.jpg" alt="Foto de Andrey" class="foto-perfil">
+    </section>
+
+    <section id="formacion" class="seccion gris">
+        <h2>Formación Académica</h2>
+
+        <div class="formacion-item">
+            <h3>Tecnologías de la Información</h3>
+            <p>Colegio Universitario de Cartago (CUC)</p>
+            <span>Último cuatrimestre – En curso</span>
+        </div>
+
+        <div class="formacion-item">
+            <h3>Big Data</h3>
+            <p>Colegio Universitario de Cartago (CUC)</p>
+            <span>4.º cuatrimestre – En curso</span>
+        </div>
+
+        <div class="formacion-item">
+            <h3>Inglés</h3>
+            <p>Formación en academia  de tecnologías UCR </p>
+            <span>Nivel avanzado – último nivel cursado</span>
+        </div>
+    </section>
+    <section id="cursos" class="seccion">
+        <h2>Cursos y Certificaciones</h2>
+
+        <div class="curso-item">
+            <h3>Networking Academy (Cisco NetAcad)</h3>
+            <p>3 cursos completados</p>
+            <span>
+                • CCNAv7: Introduction to Networks<br>
+                • Fundamentos de redes y conectividad<br>
+                • Bases de ciberseguridad y networking
+            </span>
+        </div>
+
+        <div class="curso-item">
+            <h3>Cursos de Informática</h3>
+            <p>Universidad de Costa Rica (UCR)</p>
+
+            <ul class="lista-cursos">
+                <li>Ciberseguridad Informática</li>
+                <li>Microsoft Excel – Nivel 1</li>
+                <li>Microsoft Excel – Nivel 2</li>
+                <li>Manejo de CRM’s</li>
+                <li>Office Básico 3 en 1 (Excel, Word, PowerPoint)</li>
+                <li>Essential Skills for Tech Industry</li>
+                <li>Customer Service and Tech Industry</li>
+                <li>Legal Resources</li>
+            </ul>
+        </div>
     </section>
 
     <!-- 🔹 Objetivos -->
@@ -60,9 +121,11 @@
         <ul class="lista-habilidades">
             <li>💻 HTML, CSS, JavaScript</li>
             <li>🧠 Python, Java, C#</li>
-            <li>🗄️ SQL Server, MySQL</li>
-            <li>🔒 Ciberseguridad básica</li>
-            <li>🌐 Redes y conectividad</li>
+            <li>🗄️ SQL Server, MySQL, MongoDB</li>
+            <li>🌐 Redes y conectividad (Fundamentos CCNA)</li>
+            <li>🔒 Ciberseguridad</li>
+            <li>🖥️ Linux básico y línea de comandos</li>
+            <li>📊 Análisis de datos con R y Python</li>
             <li>📊 R Studio</li>
             <li>📱 Kotlin (Desarrollo Android)</li>
             <li>🇬🇧 Inglés (Nivel B2+)</li>
@@ -101,20 +164,56 @@
                 <a href="proyecto3.html" class="boton">Ver proyecto</a>
             </div>
 
+            <!-- 🔹 NUEVO PROYECTO EDA -->
+            <div class="proyecto">
+                <h3>Análisis Exploratorio de Datos (EDA)</h3>
+                <p>
+                    Taller de Análisis Exploratorio de Datos aplicado a un conjunto de datos académico.
+                    Incluye limpieza de datos, estadística descriptiva, visualización, análisis de correlación
+                    y regresión lineal simple.
+                </p>
+                <a href="https://andreyac1397.github.io/Estadistica_EDA/EDA_KendallS_AndreyC.html#1_Introducci%C3%B3n_al_Taller"
+                   class="boton"
+                   target="_blank">
+                    Ver proyecto
+                </a>
+            </div>
+
         </div>
     </section>
 
     <!-- 🔹 Contacto -->
     <section id="contacto" class="seccion gris">
         <h2>Contacto</h2>
-        <p>📧 Correo: <a href="mailto:andrey.ac1397@gmail.com">andrey.ac1397@gmail.com</a></p>
+
+        <p>
+            📧 Correo:
+            <a href="mailto:andrey.ac1397@gmail.com">
+                andrey.ac1397@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞 Teléfonos:
+            <strong>6118-4904</strong> | <strong>6016-9907</strong>
+        </p>
+
         <p>
             🔗 Redes:
-            <a href="https://www.linkedin.com/in/andreyac1397" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/andreyac1397" target="_blank">GitHub</a> |
-            <a href="#" target="_blank">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/andreyac1397" target="_blank">
+                LinkedIn
+            </a>
+            |
+            <a href="https://github.com/andreyac1397" target="_blank">
+                GitHub
+            </a>
+            |
+            <a href="https://wa.me/50661184904" target="_blank">
+                WhatsApp
+            </a>
         </p>
     </section>
+
 
     <!-- 🔹 Pie de página -->
     <footer>

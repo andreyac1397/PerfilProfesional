@@ -25,7 +25,7 @@ header {
     background-color: #002855; /* Azul más oscuro */
     color: #ffffff; /* Texto blanco visible */
     text-align: center;
-    padding: 60px 20px 20px; /* Más espacio arriba para el nombre */
+    padding: 60px 20px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,14 +38,32 @@ header {
         margin: 0;
         font-size: 32px;
         font-weight: 600;
-        color: #ffffff; /* Asegura que el nombre sea blanco */
+        color: #ffffff;
     }
 
     header p {
         margin-top: 8px;
-        color: #d6e2ff; /* Azul claro para contraste */
+        color: #d6e2ff;
         font-size: 15px;
     }
+
+/* --------------------------- */
+/* HERO (NOMBRE + SUBTÍTULO) */
+/* --------------------------- */
+.hero-content {
+    text-align: center;
+}
+
+.hero-subtitle {
+    text-align: center; /* pisa el justify general */
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #c7d2fe;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
 
 
 /* --------------------------- */
@@ -100,6 +118,112 @@ nav {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.sobre-texto {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+
+#sobre {
+    margin-top: 120px; /* baja la sección completa */
+}
+
+/* --------------------------- */
+/* FORMACIÓN ACADÉMICA */
+/* --------------------------- */
+#formacion {
+    padding-top: 140px; /* evita que el header fijo la tape */
+}
+
+.formacion-item {
+    background: #ffffff;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+    .formacion-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .formacion-item h3 {
+        margin-bottom: 6px;
+        color: #002855;
+        font-size: 20px;
+    }
+
+    .formacion-item p {
+        margin: 0;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .formacion-item span {
+        display: block;
+        margin-top: 6px;
+        font-size: 14px;
+        color: #555;
+    }
+
+/* --------------------------- */
+/* CURSOS Y CERTIFICACIONES */
+/* --------------------------- */
+#cursos {
+    padding-top: 60px;
+}
+
+.curso-item {
+    background: #ffffff;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+    .curso-item h3 {
+        margin-bottom: 5px;
+        color: #002855;
+        text-align: center;
+    }
+
+    .curso-item p {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .curso-item span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+/* LISTA DE CURSOS UCR */
+.lista-cursos {
+    max-width: 600px;
+    margin: 15px auto 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+    .lista-cursos li {
+        margin-bottom: 6px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+
 /* --------------------------- */
 /* HABILIDADES */
 /* --------------------------- */
@@ -114,11 +238,21 @@ nav {
 
     .lista-habilidades li {
         background-color: white;
-        padding: 10px 20px;
+        padding: 10px 22px;
         border-radius: 30px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         font-weight: 500;
+        cursor: default;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     }
+
+        /* Hover moderno */
+        .lista-habilidades li:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 6px 16px rgba(0, 40, 120, 0.2);
+            background-color: #eef4ff;
+        }
+
 
 /* --------------------------- */
 /* PROYECTOS */
