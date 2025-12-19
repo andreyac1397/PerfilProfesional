@@ -314,7 +314,6 @@ footer {
 
     .hero-subtitle {
         font-size: 1.1rem;
-        margin-bottom: 10px;
     }
 
     /* Menú */
@@ -350,36 +349,34 @@ footer {
     /* Habilidades */
     .lista-habilidades {
         justify-content: center;
-        align-items: center;
-        padding: 0;
         margin: 0 auto;
     }
 
     .lista-habilidades li {
         font-size: 14px;
         padding: 8px 16px;
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
     }
 
-    /* PROYECTOS (FIX IMPORTANTE) */
+    /* ✅ PROYECTOS (FIX REAL) */
     .proyectos {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        padding: 0;
     }
 
     .proyecto {
         width: 100%;
-        max-width: 92%;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 18px;
+        padding: 20px;
+        box-sizing: border-box;   /* 🔑 CLAVE */
     }
 
     .proyecto p {
-        font-size: 15px;
-        line-height: 1.6;
         text-align: left;
+        word-break: break-word;
     }
 
     /* Footer */
